@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Customer Info</title>
+</head>
+<body>
+  <div class="container">
+    <div class="customer-info">
+      <h2>Customer Info</h2>
+      <div class="profile-picture">
+        <img src="profile.jpg" alt="Profile Picture"><br>
+        <button class="edit-picture">Edit Picture</button>
+      </div>
+      
+      <div class="info-section">  
+        <div class="name-group">
+        <label for="username">First Name </label><br>
+        <label for="username">Last Name</label><br>
+      </div>
+    
+      <div class="name-group">
+        <input type="text" placeholder="First name"><br>
+        <input type="text" placeholder="Last Name"><br>
+      </div>
+      <div class="text-group">
+      <label for="username">Email Address</label><br><br>
+        <input type="email" placeholder="Email Address"><br><br>
+    
+    
+        <label for="username">Phone Number</label><br><br>
+        <input type="tel" placeholder="Phone Number"><br><br>
+        <label for="username"> Address</label><br><br>
+        <input type="text" placeholder="Address"><br><br>
+      </div>
+        <div class="input-group">
+        <label for="username">Acount Status</label>
+       
+        </div>
+        <div class="input-group">
+            <select id="account-status" name="account-status">
+                <option value="approved">Approved</option>
+                <option value="denied">Denied</option><br><Br>
+                </select>
+        </div>
+        <h3>Payment Details</h3>
+      <div class="payment-details">
+        <label for="text"> Credit/Debit Card Number</label><br><br>
+        <input type="text" placeholder="Credit/Debit Card Number"><br>
+ 
+        <div class="name-group">
+                <label for="text">Expiration Date</label>
+                <label for="text"> CVC</label>
+                
+               
+
+        </div>
+        <div class="name-group">
+            <input type="text" placeholder="Expiration Date">
+            <input type="text" placeholder="CVC">
+        </div>
+        <h3>Booking History</h3>
+      <div class="booking-history">
+    
+        <div class="name-group">
+            <label for="text"> Project Name</label><br>
+            <label for="text"> plot No.</label><br>
+        </div>
+                
+        <div class="name-group">
+            <input type="text" placeholder="Project Name"><br>
+            <input type="text" placeholder="Plot No."><br>
+        </div>
+        <div class="name-group">
+            <label for="text"> Status</label>
+            <label for="booking-date">Booking Date</label>
+        </div>
+        <div class="name-group input-group">
+            <input type="text" placeholder="Status">
+             <input type="date" id="booking-date" name="booking-date" required>
+        </div>
+    
+      <div class="buttons">
+        <button class="cancel-button">Cancel</button>
+        <button class="save-button">Save Changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
